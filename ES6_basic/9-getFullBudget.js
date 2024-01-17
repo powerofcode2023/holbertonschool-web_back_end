@@ -1,15 +1,14 @@
 import getBudgetObject from './7-getBudgetObject';
 
-// task9
 export default function getFullBudgetObject(income, gdp, capita) {
   const budget = getBudgetObject(income, gdp, capita);
   const fullBudget = {
     ...budget,
-    getIncomeInDollars(incomeAmount) {
-      return `$${incomeAmount}`;
+    getIncomeInDollars(income) {
+      return `$${income}`;
     },
-    getIncomeInEuros(incomeAmount) {
-      return `${incomeAmount} euros`;
+    getIncomeInEuros(income) {
+      return `${income} euros`;
     },
   };
 
