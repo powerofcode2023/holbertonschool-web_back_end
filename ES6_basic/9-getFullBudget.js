@@ -1,5 +1,6 @@
 import getBudgetObject from './7-getBudgetObject.js';
 
+// task9
 export default function getFullBudgetObject(income, gdp, capita) {
   const budget = getBudgetObject(income, gdp, capita);
   const fullBudget = {
