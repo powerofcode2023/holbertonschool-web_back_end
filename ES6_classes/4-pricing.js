@@ -7,7 +7,7 @@ export default class Pricing {
 
   // Getter
 
-  get amaunt() {
+  get amount() {
     return this._amount;
   }
 
@@ -27,10 +27,10 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this.amaunt} ${this.currency.name} (${this.currency.code})`;
+    return `${this.amount} ${this.currency.name} (${this.currency.code})`;
   }
 
-  static convertPrice(amauntToConvert, conversionRate) {
-    return amauntToConvert * conversionRate;
+  static convertPrice(amountToConvert, conversionRate) {
+    return amountToConvert * conversionRate;
   }
 }
